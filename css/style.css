@@ -3,7 +3,7 @@
 .site{
     display:grid;
     grid-template-columns: 6% repeat(3,1fr) 6% ;
-    grid-template-rows:  30px 115px 50px 20px 300px 250px 250px 250px 30px;
+    grid-template-rows:  30px 115px 150px 70px 300px 250px 250px 250px 30px;
     grid-template-areas:
         'upper upper upper upper upper '
         'nav nav nav nav nav'
@@ -14,15 +14,18 @@
         'pad recs facts facts pad'
         'boxes boxes boxes boxes boxes'
         'footer footer footer footer footer';
+    font-family: sans-serif;
 }
 
     .upper{
         grid-column: 1/6;
         grid-row:1/2;
         background: #2293ed;
+        height: 100px;
     }
 
     .nav{
+        margin-top: 10px;
         grid-column: 1/6;
         grid-row:2/3;
         background: repeating-linear-gradient(
@@ -45,46 +48,75 @@
     .db{
         grid-column: 2/5;
         grid-row:3/4;
+        background: #33cc66;
+        margin: 16px;
+        border-radius: 5px;
+        height: 75px;
+    }
+
+    .form-group{
+        position:relative;
+        margin-right: 10px;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .glyphicon{
+        position: relative;
+        font-size:2em;
+        color: #2498f4;
+       left: 170px;
+        top:-30px;
+        flex-position:right;
     }
 
     .main{
         grid-column: 2/5;
         grid-row:4/5;
+        display: flex;
+        border: gray 1px solid;
     }
 
     .tasks{
         grid-column: 2/3;
         grid-row:5/6;
+        border: gray 1px solid;
     }
 
     .analytics{
       grid-column: 3/5;
         grid-row:5/6;
+        border: gray 1px solid;
     }
 
     .recs{
         grid-column: 2/3;
         grid-row:6/8;
+        border: gray 1px solid;
     }
 
     .people{
         grid-column: 3/5;
         grid-row: 6/7;
+        border: gray 1px solid;
     }
 
     .facts{
         grid-column: 3/5;
         grid-row: 7/8;
+        border: gray 1px solid;
     }
 
     .boxes{
         grid-column: 1/6;
         grid-row: 8/9;
+        border: gray 1px solid;
     }
 
     .footer{
         grid-column: 1/6;
         grid-row: 9/10;
+        border: gray 1px solid;
     }
 
 
