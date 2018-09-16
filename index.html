@@ -6,15 +6,20 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/sprites.css" type="text/css"/>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="site">
     <div class="upper">
-        <p>Social Stream</p>
-        <p> MINI of Raleigh</p>
-        <div> </div>
-
+        <div class="socialstream">Social Stream</div>
+        <div class="extras">
+            <div id="mini"> MINI of Raleigh </div>
+            <div class="spacer"></div>
+            <div id="help" class="icon-help"> </div>
+            <div class="spacer"></div>
+            <div id="settings1" class="icon-settings"> </div>
+        </div>
     </div>
     <div class="nav">
         <div class="icon-customersg" class="icon"></div>
@@ -23,7 +28,6 @@
         <div class="icon-promotions" class="icon"></div>
         <div class="icon-page-creator" class="icon"></div>
         <div class="icon-analytics" class="icon"></div>
-        <div class="icon-shadow" class="icon"></div>
     </div>
     <div class="db">
         <p> Dashboard</p>
@@ -34,29 +38,118 @@
             </div>
         </form>
     </div>
-    <div class="main">
-        Announcements
+    <div class="main border">
+        <div id="annc" >ANNOUNCEMENTS</div>
+        <div id="filler" class="border">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
+        <div class="announcementsnav">
+           <div class="leftbutton"></div>
+            <div class="rightbutton"></div>
+        </div>
     </div>
-    <div class="tasks">
-        Tasks
+    <div class="tasks border">
+        <div><h1>Tasks</h1> <div class="settingsicon"></div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
     </div>
-    <div class="analytics">
-        Analytics
+    <div class="analytics border">
+        <div>
+            <h1>Analytics</h1>
+            <div id="activity">
+                <p>Activity</p>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> 6/28/11 - 7/21/11
+                        <span class="caret"></span>
+                    </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">7/21/11 - 8/14/11</a></li>
+                            <li><a href="#">8/14/11 - 9/07/11</a></li>
+                            <li><a href="#">9/07/11 - end of time</a></li>
+                        </ul>
+                </div>
+                <div class="bargraph"></div>
+            </div>
+            <div class="pie">
+                Channels
+                <div class="channelpie"> </div>
+                Referrals
+                <div class="referralspie"> </div>
+            </div>
+        </div>
+        <div class="radio">
+               <div> <input type="radio" name="media" value="Facebook"/> Facebook </div>
+                <div><input type="radio" name="media" value="Twitter"/> Twitter</div>
+                <div><input type="radio" name="media" value="Foursquare"/> Foursquare</div>
+                <div><input type="radio" name="media" value="Google+"/> Google+</div>
+        </div>
     </div>
-    <div class="recs">
-        Recommendations
+    <div class="recs border">
+        <div><h1>Recommendations</h1></div>
+        <div>Article</div>
+        <div>Article</div>
+        <div>Checklist</div>
+        <div>Tips</div>
     </div>
-    <div class="people">
-
+    <div class="people border">
+        <div class="contactsdiv">
+            <div class="outline border">
+            <div class="info">
+               <p>75 Contacts</p>
+                <p>4 Influencers</p>
+            </div>
+            <div class="contactschart"></div>
+            </div>
+            <div class="contacts"></div>
+        </div>
+        <div class="customersdiv">
+            <div class="outline border">
+                <div class="info">
+                    <p>17 Contacts</p>
+                    <p>0 Influencers</p>
+                </div>
+                <div class="customerschart"></div>
+            </div>
+            <div class="customers"></div>
+        </div>
     </div>
-    <div class="facts">
+    <div class="facts border">
+        <div class="factsslider">
+            <div class="dykback"></div>
+            <div class="dyktext">
+                <p>DID YOU KNOW?</p>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+            </div>
+            <div class="dyknext"></div>
+        </div>
 
     </div>
     <div class="boxes">
+        <div class="box1">
+            <div class="leftbox"></div>
+            <p>Watch what you say.</p>
+            <p>Message Management</p>
+        </div>
+        <div class="box2">
+            <div class="middleboxtext">See what others are doing</div>
+        </div>
+           <div class="middlebox"></div>
+        <div class="box3">
+            <p>Version 2.0 is coming.</p>
+            <div class="rightbox"></div>
+        </div>
 
     </div>
     <div class="footer">
-
+        <div>Tutorial | Support | Blog</div>
+        <div>Ariel Winter likes your Win a Cooper Sweepstakes Promotion</div>
+        <div><div class="avatar"></div> Logout </div>
+        <div>
+            <div class="bcbw"></div>
+            <div class="twitterbw"></div>
+            <div class="fsbw"></div>
+            <div class="ytbw"></div>
+        </div>
     </div>
 
 
@@ -69,5 +162,4 @@
 
 
 </body>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </html>
