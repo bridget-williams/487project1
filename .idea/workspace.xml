@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fff0a9d0-a179-42cf-8f66-d899b5d348ea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/sprites.css" afterPath="$PROJECT_DIR$/css/sprites.css" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/img/Background.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Analytics.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Analyticsb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Customers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Customersg.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Dashboard.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Dashboardb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Help.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Messages.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Messagesb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Page Creator.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Page Creatorb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Promotions.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Promotionsb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Icon_ Shadow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Marker.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/img/Spacer.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+            <state relative-caret-position="1356">
+              <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -49,8 +30,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="-1600">
+              <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/css/sprites.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+              <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -182,12 +163,12 @@
       <updated>1535564626612</updated>
       <workItem from="1535564627880" duration="39000" />
       <workItem from="1535679831495" duration="8853000" />
-      <workItem from="1536600185507" duration="17919000" />
+      <workItem from="1536600185507" duration="21953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26811000" />
+    <option name="totallyTimeSpent" value="30845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -269,23 +250,23 @@
     <entry file="file://$PROJECT_DIR$/css/sprites.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="85" column="14" lean-forward="true" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="1356">
+          <caret line="113" column="14" lean-forward="true" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="-1600">
+          <caret line="154" column="0" lean-forward="true" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding />
         </state>
       </provider>
