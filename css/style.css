@@ -3,7 +3,7 @@
 .site{
     display:grid;
     grid-template-columns: 6% repeat(3,1fr) 6% ;
-    grid-template-rows:  30px 115px 150px 70px 300px 250px 250px 250px 50px;
+    grid-template-rows:  30px 115px 150px 60px 300px 250px 250px 250px 50px;
     grid-template-areas:
         'upper upper upper upper upper '
         'nav nav nav nav nav'
@@ -14,11 +14,12 @@
         'pad recs facts facts pad'
         'pad boxes boxes boxes pad'
         'footer footer footer footer footer';
-    font-family: sans-serif;
+    font-family: "myriad-pro";
 }
     h1{
        font-size: 24pt;
         color:#2498f4;
+        margin-top: 0;
     }
 
     .upper{
@@ -126,12 +127,15 @@
     }
 
     #annc{
-        font-family: sans-serif;
         color:#fe7f13;
         font-size: 12pt;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
+        text-align: left;
+        flex-direction: row;
+        width: 20%;
+        padding-left: 2%;
     }
 
     #filler{
@@ -142,15 +146,19 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
+        width:80%;
+        padding-left: 1%;
     }
 
     .announcementsnav{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: row;
         text-align: center;
         align-content: center;
+        width:10%;
+        align-items:center ;
     }
 
     .border{
@@ -161,6 +169,51 @@
         grid-column: 2/3;
         grid-row:5/6;
         margin: 0 0px 0 16px;
+        display:flex;
+        flex-direction: column;
+    }
+
+    #tasksheader{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6%;
+        margin-top: 6%;
+    }
+
+    .folder{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-bottom: 2px solid #dddddd;
+        color:#2498f4;
+        justify-content: space-around;
+        padding: 4pt;
+        font-size: 14pt;
+
+    }
+
+    #head{
+        margin-right: 3pt;
+    }
+
+
+    .headholder{
+        border: 1pt solid #dddddd;
+        border-radius: 3px;
+        padding: 4pt;
+        display: flex;
+        flex-direction: row;
+        float:right;
+    }
+
+    p{
+        margin:0;
+    }
+
+    h2{
+        margin:0;
     }
 
     .analytics{
@@ -267,7 +320,7 @@
         box-shadow: #dddcdc 0 -5px 10px;
         display:flex;
         align-items: center;
-        justify-content: space-around;
+
     }
 
     .footercontent{
@@ -276,8 +329,8 @@
         border-right: 1pt #dddddd solid;
         height: 100%;
         align-items: center;
-        justify-content: center;
-        padding: 0 2% 0 2%;
+        justify-content: space-between;
+        padding: 0 1% 0 1%;
     }
 
     .fc1, .fc2, .fc3{
@@ -285,15 +338,43 @@
     }
 
     .fc1{
-        margin-left: none;
+        width: 30%;
+        display:flex;
+        flex-direction: row;
+        align-content: right;
+        justify-content: right;
+    }
+
+    #links{
+        text-align: right;
+        float:right;
+        margin-bottom: 0;
+        padding-bottom:0;
+    }
+
+    .fc2{
+        width: 40%;
     }
 
     .fc3{
         border:none;
+        width: 12%;
     }
+
+    .fc4{
+        width: 12%;
+    }
+
 
     #uparrow{
         margin-left:10%;
+    }
+
+    a{
+        font-weight: bold;
+        color:#309ef2;
+        margin: 0;
+        padding: 0;
     }
 
 
