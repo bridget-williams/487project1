@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Exercise 2</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/sprites.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
@@ -48,17 +48,45 @@
     </div>
     <div class="tasks border">
         <div id="tasksheader"><h1>Tasks</h1> <div class="settingsicon"></div></div>
-        <div class="folder"><h2>1</h2> <p>Welcome Contacts</p> <div class="headholder"> <img id="head" src="img/head.png"><p class="number">32</p></div></div>
-        <div class="folder"><h2>2</h2> <p>Provide Responses</p></div>
-        <div class="folder"><h2>3</h2><p>Review Activity</p></div>
-        <div class="folder"><h2>4</h2><p>Reach Out</p></div>
+        <div class="folder">
+            <h2>1</h2>
+            <p class="midtext">Welcome Contacts</p>
+            <div class="headholder">
+                <img class="head" src="img/head.png">
+                <p class="number">32</p>
+            </div>
+        </div>
+        <div class="folder">
+            <h2>2</h2>
+            <p class="midtext">Provide Responses</p>
+            <div class="headholder">
+                <img class="head" src="img/head.png">
+                <p class="number">36</p>
+            </div>
+        </div>
+        <div class="folder">
+            <h2>3</h2>
+            <p class="midtext">Review Activity</p>
+            <div class="headholder">
+                <img class="head" src="img/head.png">
+                <p class="number">36</p>
+            </div>
+        </div>
+        <div class="folder">
+            <h2>4</h2>
+            <p class="midtext">Reach Out</p>
+            <div class="headholder">
+                <img id="head" src="img/head.png">
+                <p class="number">3</p>
+            </div>
+        </div>
     </div>
     <div class="analytics border">
-        <div>
-            <h1>Analytics</h1>
+        <h1>Analytics</h1>
+        <div id="analyticsstats">
             <div id="activity">
-                <p>Activity</p>
                 <div class="dropdown">
+                    <p>Activity</p>
                     <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"> 6/28/11 - 7/21/11
                         <span class="caret"></span>
                     </button>
@@ -71,46 +99,79 @@
                 <div class="bargraph"></div>
             </div>
             <div class="pie">
-                Channels
+                <p>CHANNELS</p>
                 <div class="channelpie"> </div>
-                Referrals
+                <br>
+                <p>REFERRALS</p>
                 <div class="referralspie"> </div>
             </div>
         </div>
         <div class="radio">
-               <div> <input type="radio" name="media" value="Facebook"/> Facebook </div>
-                <div><input type="radio" name="media" value="Twitter"/> Twitter</div>
-                <div><input type="radio" name="media" value="Foursquare"/> Foursquare</div>
-                <div><input type="radio" name="media" value="Google+"/> Google+</div>
+               <div class="radiosection"> <div class="orangecheck"></div> <input type="checkbox" name="media" value="Facebook"/> Facebook </div>
+                <div class="radiosection"> <div class="orangecheck"></div> <input type="checkbox" name="media" value="Twitter"/> Twitter</div>
+                <div class="radiosection"> <div class="orangecheck"></div> <input type="checkbox" name="media" value="Foursquare"/> Foursquare</div>
+                <div class="radiosection"> <div class="orangecheck"></div> <input type="checkbox" name="media" value="Google+"/> Google+</div>
         </div>
     </div>
     <div class="recs border">
-        <div><h1>Recommendations</h1></div>
-        <div>Article</div>
-        <div>Article</div>
-        <div>Checklist</div>
-        <div>Tips</div>
+        <div id="recheader"><h1>Recommendations</h1></div>
+        <div class="recfolder">
+            <div class="icon-article recicon"></div>
+            <div class="rectext">
+                <p class="miniheader">Article</p>
+                <p class="midtext">7 steps to getting more fans</p>
+            </div>
+        </div>
+        <div class="recfolder">
+            <div class="icon-article recicon"></div>
+            <div class="rectext">
+                <p class="miniheader">Article</p>
+                <p class="midtext">Increase traction with more interactions</p>
+            </div>
+        </div>
+        <div class="recfolder">
+            <div class="icon-checklist recicon"></div>
+            <div class="rectext">
+                <p class="miniheader">Checklist</p>
+                <p class="midtext">Creating a promotion</p>
+            </div>
+        </div>
+        <div class="recfolder">
+            <div class="icon-tip recicon tipicon"></div>
+            <div class="rectext">
+                <p class="miniheader">Tip</p>
+                <p class="midtext">Share more</p>
+            </div>
+        </div>
     </div>
     <div class="people border">
         <div class="contactsdiv">
+            <div class="contacts"></div>
             <div class="outline border">
-            <div class="info">
-               <p>75 Contacts</p>
-                <p>4 Influencers</p>
-            </div>
+                <div class="ribbon">
+                    <div class="ribbonleft"></div>
+                    <div class="info">
+                       <p>75 CONTACTS</p>
+                        <p class="sub">4 INFLUENCERS</p>
+                    </div>
+                    <div class="ribbonright"></div>
+                </div>
             <div class="contactschart"></div>
             </div>
-            <div class="contacts"></div>
         </div>
         <div class="customersdiv">
+            <div class="customers"></div>
             <div class="outline border">
-                <div class="info">
-                    <p>17 Contacts</p>
-                    <p>0 Influencers</p>
+                <div class="ribbon">
+                    <div class="ribbonleft"></div>
+                    <div class="info">
+                        <p>17 CONTACTS</p>
+                        <p class="sub">0 INFLUENCERS</p>
+                    </div>
+                    <div class="ribbonright"></div>
                 </div>
                 <div class="customerschart"></div>
             </div>
-            <div class="customers"></div>
         </div>
     </div>
     <div class="facts border">
@@ -118,23 +179,23 @@
             <a href="#"><div class="dykback"></div></a>
             <div class="dyktext">
                 <div id="dky">DID YOU KNOW?</div>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+                <p class="lineheight">Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
             </div>
             <a href="#"><div class="dyknext"></div></a>
         </div>
     </div>
     <div class="boxes">
-        <div class="box1">
+        <div class=" box box1">
             <div class="leftbox"></div>
-            <p>Watch what you say.</p>
-            <p>Message Management</p>
+            <p class=" lbtext lbtext1">Watch what you say.</p>
+            <p class=" lbtext lbtext2">Message Management</p>
         </div>
-        <div class="box2">
-            <div class="middleboxtext">See what others are doing</div>
+        <div class="box box2">
+            <div class="middleboxtext">See what others are doing with us.</div>
+            <div class="middlebox"></div>
         </div>
-           <div class="middlebox"></div>
-        <div class="box3">
-            <p>Version 2.0 is coming.</p>
+        <div class="box box3">
+            <p class="rbtext">Version 2.0 is coming.</pclassrbtext>
             <div class="rightbox"></div>
         </div>
 
@@ -155,7 +216,7 @@
 
 
 
-<!--close parent div-->
+<!--close site div-->
 </div>
 
 
