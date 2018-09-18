@@ -1,21 +1,23 @@
 @supports (grid-area: auto){
 
-.site{
-    display:grid;
-    grid-template-columns: 6% repeat(3,1fr) 6% ;
-    grid-template-rows:  30px 115px 150px 60px 380px 280px 220px 280px 50px;
-    grid-template-areas:
-        'upper upper upper upper upper '
-        'nav nav nav nav nav'
-        'pad db db db pad'
-        'pad main main main pad'
-        'pad tasks analytics analytics pad'
-        'pad recs people people pad'
-        'pad recs facts facts pad'
-        'pad boxes boxes boxes pad'
-        'footer footer footer footer footer';
-    font-family: "myriad-pro";
-}
+    .site{
+        display:grid;
+        grid-template-columns: 6% repeat(3,1fr) 6% ;
+        grid-template-rows:  30px 115px 150px 60px 380px 280px 220px 280px 50px;
+        grid-template-areas:
+            'upper upper upper upper upper '
+            'nav nav nav nav nav'
+            'pad db db db pad'
+            'pad main main main pad'
+            'pad tasks analytics analytics pad'
+            'pad recs people people pad'
+            'pad recs facts facts pad'
+            'pad boxes boxes boxes pad'
+            'footer footer footer footer footer';
+        font-family: "myriad-pro";
+    }
+
+    /*Formating site wide*/
     h1{
        font-size: 24pt;
         color:#2498f4;
@@ -23,6 +25,28 @@
         font-weight: lighter;
     }
 
+    .border{
+        border: #efefef 2px solid;
+    }
+
+    p{
+        margin:0;
+        padding:0;
+        line-height:1;
+    }
+
+    h2{
+        margin:0;
+        border-radius: 50%;
+        background: #33cc66;
+        width: 22px;
+        color:white;
+        text-align: center;
+        font-size: 22px;
+        font-weight: lighter;
+    }
+
+    /*formatting for upper nav bar*/
     .upper{
         grid-column: 1/6;
         grid-row:1/2;
@@ -33,10 +57,10 @@
         justify-content: space-between;
         align-items: center;
     }
+
     .socialstream, .extras{
         flex-direction: row;
         padding: 7%;
-
     }
 
     .extras{
@@ -53,6 +77,7 @@
         flex-direction: row;
     }
 
+    /*formatting for main nav bar*/
     .nav{
         margin-top: 10px;
         grid-column: 1/6;
@@ -73,7 +98,7 @@
         max-width: 100%;
     }
 
-
+    /*formatting for dashboard bar*/
     .db{
         grid-column: 2/5;
         grid-row:3/4;
@@ -86,7 +111,6 @@
         justify-content: space-between;
 
     }
-
 
     #searchbar{
         position:relative;
@@ -116,6 +140,7 @@
         align-items: center;
     }
 
+    /*formatting for announcements bar*/
     .main{
         grid-column: 2/5;
         grid-row:4/5;
@@ -162,10 +187,7 @@
         align-items:center ;
     }
 
-    .border{
-        border: #efefef 2px solid;
-    }
-
+    /*formatting for tasks section*/
     .tasks{
         grid-column: 2/3;
         grid-row:5/6;
@@ -206,7 +228,6 @@
         margin-right: 3pt;
     }
 
-
     .headholder{
         border: 1pt solid #dddddd;
         border-radius: 3px;
@@ -220,22 +241,7 @@
         justify-content: space-between;
     }
 
-    p{
-        margin:0;
-        padding:0;
-        line-height:1;
-    }
-
-    h2{
-        margin:0;
-        border-radius: 50%;
-        background: #33cc66;
-        width: 22px;
-        color:white;
-        text-align: center;
-        font-size: 22px;
-        font-weight: lighter;
-    }
+    /*formatting for analytics section*/
 
     .analytics{
       grid-column: 3/5;
@@ -274,9 +280,6 @@
         position:relative;
     }
 
-
-
-
     .radiosection{
         position:relative;
     }
@@ -285,7 +288,6 @@
         position: absolute;
         display:none;
     }
-
 
     .dropdown{
         display:flex;
@@ -296,7 +298,6 @@
     .dropdown-menu{
         right:0;
         float:right;
-
     }
 
     .btn-primary {
@@ -312,6 +313,8 @@
     .caret{
         color: #fe7f13;
     }
+
+    /*formatting for recommendations section*/
 
     .recs{
         grid-column: 2/3;
@@ -362,6 +365,7 @@
         color: #888888;
     }
 
+    /*formatting for Contacts and Customers section*/
 
     .people{
         grid-column: 3/5;
@@ -370,10 +374,6 @@
         margin: 0 16px 0 0;
         padding-top: 1%;
     }
-
-
-
-
 
     .contactsdiv, .customersdiv{
         flex-direction: column;
@@ -435,7 +435,7 @@
         font-size: 8pt;
     }
 
-
+    /*formatting for facts section*/
     .facts{
         grid-column: 3/5;
         grid-row: 7/8;
@@ -490,6 +490,7 @@
         line-height: 1.4;
     }
 
+    /*formatting for ad boxes*/
     .boxes{
         grid-column: 2/5;
         grid-row: 8/9;
@@ -572,6 +573,7 @@
         letter-spacing: 1px;
     }
 
+    /*formatting for footer*/
     .footer{
         grid-column: 1/6;
         grid-row: 9/10;
@@ -637,7 +639,7 @@
         padding: 0;
     }
 
-
+    /*responsiveness formatting*/
     @media only screen and (max-width: 768px){
         .site{
             grid-template-areas:
