@@ -118,6 +118,10 @@
         align-items: center;
     }
 
+    .hidden{
+        display:none;
+    }
+
     #dashboard{
         flex-direction: row;
         margin:0;
@@ -136,6 +140,8 @@
     }
 
     .form-group{
+        display: flex;
+        flex-direction: row;
         justify-items: center;
         align-items: center;
     }
@@ -242,7 +248,6 @@
     }
 
     /*formatting for analytics section*/
-
     .analytics{
       grid-column: 3/5;
         grid-row:5/6;
@@ -642,21 +647,157 @@
     /*responsiveness formatting*/
     @media only screen and (max-width: 768px){
         .site{
+            display: grid;
+            grid-template-columns: 100% ;
+            grid-template-rows:  30px 115px 150px 150px 500px 500px 500px 500px 280px 280px 50px;
             grid-template-areas:
-            "upper upper upper upper upper"
-            "nav nav nav nav nav"
-            "db db db db db"
-            "main main main main main"
-            "tasks tasks tasks tasks tasks"
-            "analytics analytics analytics analytics analytics"
-            "people people people people people"
-            "recs recs recs recs recs"
-            "facts facts facts facts facts"
-            "boxes boxes boxes boxes boxes"
-            "footer footer footer footer footer";
+            "upper"
+            "nav"
+            "db"
+            "main"
+            "tasks"
+            "analytics"
+            "people"
+            "recs"
+            "facts"
+            "boxes"
+            "footer";
         }
         .upper, .nav, .db, .main, .tasks, .analytics, .people, .recs, .facts, .boxes, .footer{
-            grid-column: 1/6;
+            grid-column: 1/1;
+        }
+
+        #help, .#settings1{
+            margin: 5pt;
+            width:20px;
+        }
+        .icon{
+            width:100%;
+            margin:5pt;
+        }
+
+        #searchbar{
+            display:none;
+        }
+
+        .hiddensearch{
+            display:flex;
+            z-index: 10000;
+            left:-20px;
+            top:0;
+        }
+
+        tasks{
+            grid-row: 5/6;
+        }
+
+        .analytics{
+            grid-row:6/7;
+        }
+
+        #analyticsstats{
+            flex-direction: column;
+        }
+
+        #activity{
+            max-width: 100%;
+            margin:0;
+            overflow-x: scroll;
+        }
+
+        .pie{
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            border:none;
+            margin-top: 10pt;
+        }
+
+        .channels, .referrals{
+            display:flex;
+            flex-direction: column;
+        }
+
+        .people{
+            grid-row: 7/8;
+            display:flex;
+            flex-direction: column;
+        }
+
+        .ribbonleft,.ribbonright{
+            top:40pt;
+        }
+
+        .ribbonleft{
+            left:22px;
+        }
+
+        .ribbonright{
+            right:22px;
+        }
+
+        .recs{
+            grid-row: 8/9;
+        }
+
+        .facts{
+            grid-row: 9/10;
+        }
+
+        .footer{
+            grid-row:11/12;
+        }
+
+        .main{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .announcementsnav, #annc{
+            width:100%;
+            justify-content: center;
+        }
+
+        .leftbutton, .rightbutton{
+            margin:0 10pt;
+        }
+
+        .boxes{
+            grid-row: 10/11;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1{
+            display:flex;
+            width:90%;
+        }
+
+        .lbtext2{
+            bottom: 20pt;
+        }
+
+        .box2{
+            display:none;
+        }
+
+        .box3{
+            display:none;
+        }
+
+        .footer{
+            justify-content: space-evenly;
+        }
+
+        .fc2{
+            display:none;
+        }
+
+        .fc4{
+            width:35%;
         }
 
     }
