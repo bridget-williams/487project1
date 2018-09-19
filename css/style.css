@@ -14,7 +14,7 @@
             'pad recs facts facts pad'
             'pad boxes boxes boxes pad'
             'footer footer footer footer footer';
-        font-family: "myriad-pro";
+        font-family: "myriad-pro", sans-serif;
     }
 
     /*Formating site wide*/
@@ -92,6 +92,10 @@
         display:flex;
         justify-content: center;
         max-width: 100%;
+    }
+
+    .hamburger{
+        display:none;
     }
 
     .icon{
@@ -649,7 +653,7 @@
         .site{
             display: grid;
             grid-template-columns: 100% ;
-            grid-template-rows:  30px 115px 150px 150px 500px 500px 500px 500px 280px 280px 50px;
+            grid-template-rows:  30px 70px 150px 150px 500px 500px 500px 500px 280px 280px 50px;
             grid-template-areas:
             "upper"
             "nav"
@@ -667,14 +671,35 @@
             grid-column: 1/1;
         }
 
-        #help, .#settings1{
+        #help, #settings1{
             margin: 5pt;
             width:20px;
         }
-        .icon{
-            width:100%;
-            margin:5pt;
+
+        .nav{
+            background: #184a73;
         }
+
+        .icon{
+            display:none;
+        }
+
+        .hamburger{
+            display: inline-block;
+            text-align: center;
+            height: 30px;
+            width: 40px;
+        }
+
+        .line{
+            background:white;
+            height: 8px;
+            border-radius: 20px;
+            width: 25pt;
+            margin: 5pt;
+        }
+
+
 
         #searchbar{
             display:none;
